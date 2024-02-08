@@ -54,33 +54,8 @@ class BudgetDetailView(RetrieveUpdateDestroyAPIView):
 
 
 class AnalyticsView(APIView):
+    
     permission_classes = [IsAuthenticated]
-
-    @extend_schema(
-        parameters=[
-            {
-                'name': 'start_date',
-                'required': True,
-                'in': 'query',
-                'description': 'Start date in the format YYYY-MM-DD',
-                'schema': {
-                    'type': 'string',
-                    'format': 'date',
-                },
-            },
-            {
-                'name': 'end_date',
-                'required': True,
-                'in': 'query',
-                'description': 'End date in the format YYYY-MM-DD',
-                'schema': {
-                    'type': 'string',
-                    'format': 'date',
-                },
-            },
-        ],
-        responses={200: {'description': 'Analytics data'}}
-    )
 
     def get_total_expenses(self, start_date, end_date):
         total_expenses = Expense.objects.filter(
