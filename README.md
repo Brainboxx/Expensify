@@ -28,17 +28,15 @@ username and password.
    - On Mac:
      ```
      source venv/bin/activate
-     ```   
-6. Install the required dependencies.
-   ```
-   pip install -r requirements.txt
-   ```
-   
-6. Navigate to django project root
+     ```  
+5. Navigate to django project root
    ```
    cd expensify
    ```
-   
+6. Install the required dependencies.
+   ```
+   pip install -r requirements.txt
+   ```  
 7. Set up the database.
    ```
    python manage.py makemigrations
