@@ -55,4 +55,4 @@ username and password.
 # Endpoints & Usage
 
 - Explore and interact with the API endpoints for authentication, expenses, budgets via the docs at http://localhost:8000/api/schema/docs/.
-- note: The 'http://localhost:8000/analytics/' endpoint takes a start_date and end_date parameter when sending a GET request.
+- NOTE: The 'http://localhost:8000/analytics/' endpoint takes a start_date and end_date parameter when sending a GET request.
