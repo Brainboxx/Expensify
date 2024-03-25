@@ -21,6 +21,7 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     path('expenses/', ExpenseListCreateView.as_view(), name='expense-list-create'),
     path('expenses/<int:id>', ExpenseDetailView.as_view(), name='expense-detail'),
+    path('expenses/<int:id>/delete', ExpenseDetailView.as_view(), name='expense-delete'),
     path('budgets/', BudgetListCreateView.as_view(), name='budget-list-create'),
     path('budgets/<int:id>', BudgetDetailView.as_view(), name='budget-detail'),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),

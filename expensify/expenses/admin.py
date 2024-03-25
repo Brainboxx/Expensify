@@ -9,5 +9,5 @@ class ExpenseAdmin(admin.ModelAdmin):
 
 @admin.register(Budget)
 class BudgetAdmin(admin.ModelAdmin):
-    list_display = ('category', 'amount',)
+    list_display = ('name', 'amount',)
 
